@@ -1,0 +1,1183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Woodgrove Groceries</title>
+    <link rel="icon" type="image/x-icon" href="/woodgrove-favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/site.css?v=CbpefLc0K6aarNOHS64d8Vrp_IKLSGY_SpGnE-0cEQM" />
+    <link rel="stylesheet" href="/woodgrovedemo.styles.css?v=UNWwh5TqTE045NbXmet6TAyr2_XhWanLx_Gz3JAz7oA" />
+    <link rel="stylesheet" href="/css/bs-stepper.min.css">
+
+    <!--- Font ---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header b-0fiwf46bo8 class="header" id="header">
+        <div b-0fiwf46bo8 id="headerContainer" class="container" style="padding-top: 20px; padding-bottom: 20px;">
+            <nav b-0fiwf46bo8 class="navbar navbar-expand-lg">
+                <div b-0fiwf46bo8 class="container-fluid">
+                    <a href="/">
+                        <img b-0fiwf46bo8 src="/images/logo.png" height="22" alt="Woodgrove logo" style="padding-left: 10px;" />
+                    </a> <a class="navbar-brand" style="padding-left: 15px;" href="/">Woodgrove
+                        Groceries</a>
+                    <button b-0fiwf46bo8 class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span b-0fiwf46bo8 class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div b-0fiwf46bo8 class="collapse navbar-collapse" id="navbarContent">
+                        <div b-0fiwf46bo8 class="navbar-nav me-auto mb-2">
+
+                        </div>
+                        <lu b-0fiwf46bo8 class="navbar-nav">
+                            
+<ul class="navbar-nav">
+
+
+
+
+
+    <li class="nav-item">
+        <a class="nav-link header-button" role="button" href="/SignIn?handler=Default">Sign in</a>
+    </li>
+</ul>
+
+                        </lu>
+                    </div>
+                </div>
+            </nav>
+        </div>
+            
+    <!-- Welcome message-->
+
+    <div class="inner-header">
+        <div class="jumbotron" style="margin-top: 20px;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <h1 class="h2"
+                        style="margin-bottom: 5px; margin-top: -10px; text-shadow: 1px 1px 10px rgb(3, 80, 2); w">Welcome to
+                        Woodgrove
+                        Groceries demo</h1>
+                </div>
+                <div class="row align-items-center" style="padding-top: 20px;">
+
+
+                    <div class="col lead" style="text-align: left;">
+                        <span style="letter-spacing: 0.1px;">
+                            <a href="https://aka.ms/ciam/docs" class="link-without-underline">Microsoft Entra External
+                                ID</a> offers solutions that let you quickly add
+                            intuitive, user-friendly sign-in and sign-up experiences for your external apps.
+                            <b>Woodgrove
+                                Groceries</b> live demo illustrates several authentication experiences for common retail
+                            scenarios.</span>
+                        <div style="text-align: left; padding-top: 15px;">
+                            <i class="bi bi-youtube fs-3" style="vertical-align: -.23em"></i> <a style="color: white;"
+                                class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="https://learn.microsoft.com/en-us/entra/external-id/customers/reference-training-videos#visit-our-video-library">Visit
+                                our video library</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Welcome message end-->
+
+            
+    <!--Waves Container-->
+    <div id="waves">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+    </div>
+    <!--Waves end-->
+
+    </header>
+
+    
+
+    <div b-0fiwf46bo8 class="container">
+        <main b-0fiwf46bo8 role="main" class="pb-3">
+            
+
+<!-- #region hidden user info-->
+<div class="d-none">
+    <span id="allergy"></span>
+</div>
+
+<!-- Numbers end-->
+
+<div class="" id="specials">
+
+    <div style="margin-bottom: 5px;">&nbsp;</div>
+
+    <div class="d-flex justify-content-between">
+        <div>
+
+        </div>
+        <div>
+            <span id="stepUpFulfilled" style="display: none;">False</span>
+            <div id="checkoutContainer" style="display: none;"><i class="bi bi-cart4"></i> <span id="total">0</span>$ <a
+                    style="margin-left: 20px;" href="#" class="btn btn-warning" role="button" id="checkout"
+                    onclick="return checkout();">Checkout</a></div>
+        </div>
+    </div>
+</div>
+
+<!-- #region  Filters -->
+<div class="row mb-4" style="padding-top: 35px;">
+    <div class="col">
+        <div class="font-weight-bold h4" style="letter-spacing: 1px;">
+            <strong>Get in the groove for shopping</strong>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="input-group">
+            <span class="input-group-text">
+                <i class="bi bi-filter-square"></i>
+            </span>
+            <select class="form-select" id="categoryFilter" aria-label="Filter by category">
+                <option value="">All Categories</option>
+                    <option value="Bakery">Bakery</option>
+                    <option value="Beverages">Beverages</option>
+                    <option value="Cleaning">Cleaning</option>
+                    <option value="Dairy">Dairy</option>
+                    <option value="Frozen">Frozen</option>
+                    <option value="Fruits">Fruits</option>
+                    <option value="Pantry">Pantry</option>
+                    <option value="Pasta &amp; Grains">Pasta &amp; Grains</option>
+                    <option value="Snacks">Snacks</option>
+                    <option value="Vegetables">Vegetables</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="input-group">
+            <span class="input-group-text">
+                <i class="bi bi-search"></i>
+            </span>
+            <input type="text" class="form-control" id="searchInput" placeholder="Search products..."
+                aria-label="Search products">
+        </div>
+    </div>
+</div>
+
+<div class="row row-cols-2 row-cols-md-4 g-3 align-items-center" id="productsContainer">
+
+        <div class="col product-item" data-category="Dairy" data-name="aged sharp cheddar cheese 200 g">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/cheese.png" alt="Aged sharp cheddar cheese 200 g">
+
+
+                    <div class="card-title">Aged sharp cheddar cheese 200 g</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $5.50
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(5.5)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Cleaning" data-name="laundry detergent 2l">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/laundry-detergent.png" alt="Laundry detergent 2L">
+
+
+                    <div class="card-title">Laundry detergent 2L</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $12.99
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(12.99)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Dairy" data-name="greek yogurt 500 g">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/greek-yogurt.png" alt="Greek yogurt 500 g">
+
+
+                    <div class="card-title">Greek yogurt 500 g</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $4.80
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(4.8)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Cleaning" data-name="glass cleaner 500ml">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/glass-cleaner.png" alt="Glass cleaner 500ml">
+
+
+                    <div class="card-title">Glass cleaner 500ml</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $3.79
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(3.79)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Pantry" data-name="canned chickpeas 400 g">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/chickpeas.png" alt="Canned chickpeas 400 g">
+
+
+                    <div class="card-title">Canned chickpeas 400 g</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $1.20
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(1.2)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Fruits" data-name="dark purple grapes 1.5 kg">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/grapes.jpg" alt="Dark purple grapes 1.5 kg">
+
+
+                    <div class="card-title">Dark purple grapes 1.5 kg</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $11.25
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(11.25)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Fruits" data-name="oranges 1 kg">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/oranges.png" alt="Oranges 1 kg">
+
+
+                    <div class="card-title">Oranges 1 kg</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $4.00
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(4.0)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Frozen" data-name="frozen organic berry blend">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/berries.png" alt="Frozen organic berry blend">
+
+
+                    <div class="card-title">Frozen organic berry blend</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $5.50
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(5.5)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Frozen" data-name="frozen mango chunks 500 g">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/frozen-mango.png" alt="Frozen mango chunks 500 g">
+
+
+                    <div class="card-title">Frozen mango chunks 500 g</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $3.80
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(3.8)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Beverages" data-name="pure natural coconut water">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/coconut-water.png" alt="Pure natural coconut water">
+
+
+                    <div class="card-title">Pure natural coconut water</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $2.80
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(2.8)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Fruits" data-name="watermelon 1 unit">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/watermelon.jpg" alt="Watermelon 1 unit">
+
+
+                    <div class="card-title">Watermelon 1 unit</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $12.50
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(12.5)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Pantry" data-name="pure maple syrup">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/maple-syrup.png" alt="Pure maple syrup">
+
+
+                    <div class="card-title">Pure maple syrup</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $1.50
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(1.5)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Pantry" data-name="greek olive oil">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/olive-oil.png" alt="Greek Olive Oil">
+
+
+                    <div class="card-title">Greek Olive Oil</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $12.00
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(12.0)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Frozen" data-name="strawberry ice cream">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/ice-cream.png" alt="Strawberry ice cream">
+
+
+                    <div class="card-title">Strawberry ice cream</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $2.00
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(2.0)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Dairy" data-name="butter 250 g">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/butter.png" alt="Butter 250 g">
+
+
+                    <div class="card-title">Butter 250 g</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $3.60
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(3.6)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Beverages" data-name="fresh orange juice 1 l">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/orange-juice.png" alt="Fresh orange juice 1 L">
+
+
+                    <div class="card-title">Fresh orange juice 1 L</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $4.00
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(4.0)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Bakery" data-name="french bread 400 g">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/bread.jpg" alt="French bread 400 g">
+
+
+                    <div class="card-title">French bread 400 g</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $13.00
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(13.0)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Pantry" data-name="raw unfiltered local honey 500 g">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/honey.png" alt="Raw unfiltered local honey 500 g">
+
+
+                    <div class="card-title">Raw unfiltered local honey 500 g</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $12.00
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(12.0)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Cleaning" data-name="liquid dish soap 500ml">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/dish-soap.png" alt="Liquid dish soap 500ml">
+
+
+                    <div class="card-title">Liquid dish soap 500ml</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $3.99
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(3.99)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Beverages" data-name="six bottles of water pack">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/water.png" alt="Six Bottles Of Water pack">
+
+
+                    <div class="card-title">Six Bottles Of Water pack</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $3.00
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(3.0)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Beverages" data-name="green tea 20 bags">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/green-tea.png" alt="Green tea 20 bags">
+
+
+                    <div class="card-title">Green tea 20 bags</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $3.00
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(3.0)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Snacks" data-name="70% cocoa dark chocolate bar">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/chocolate.png" alt="70% cocoa dark chocolate bar">
+
+
+                    <div class="card-title">70% cocoa dark chocolate bar</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $4.50
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(4.5)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Fruits" data-name="organic bananas 1 kg">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/bananas.png" alt="Organic bananas 1 kg">
+
+
+                    <div class="card-title">Organic bananas 1 kg</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $3.60
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(3.6)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Vegetables" data-name="carrots 1 kg">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/carrots.png" alt="Carrots 1 kg">
+
+
+                    <div class="card-title">Carrots 1 kg</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $2.00
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(2.0)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Frozen" data-name="margherita wood-fired pizza">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/pizza.png" alt="Margherita wood-fired pizza">
+
+
+                    <div class="card-title">Margherita wood-fired pizza</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $3.75
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(3.75)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Vegetables" data-name="organic sweet tomato 1 kg">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/tomatoes.jpg" alt="Organic sweet tomato 1 kg">
+
+
+                    <div class="card-title">Organic sweet tomato 1 kg</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $2.75
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(2.75)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Dairy" data-name="organic eggs 12 count">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/eggs.jpg" alt="Organic eggs 12 count">
+
+
+                    <div class="card-title">Organic eggs 12 count</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $12.99
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(12.99)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Cleaning" data-name="hand soap 250ml">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/hand-soap.png" alt="Hand soap 250ml">
+
+
+                    <div class="card-title">Hand soap 250ml</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $2.99
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(2.99)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Fruits" data-name="red apples 1 kg">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/red-apples.png" alt="Red apples 1 kg">
+
+
+                    <div class="card-title">Red apples 1 kg</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $3.90
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(3.9)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Pantry" data-name="homemade mixed nut granola 500 g">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/granola.png" alt="Homemade mixed nut granola 500 g">
+
+
+                    <div class="card-title">Homemade mixed nut granola 500 g</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $4.00
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(4.0)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Dairy" data-name="organic sugar 2 packages">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/sugar.png" alt="Organic sugar 2 packages">
+
+
+                    <div class="card-title">Organic sugar 2 packages</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $7.00
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(7.0)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Bakery" data-name="chocolate chip cookies">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/cookies.png" alt="Chocolate chip cookies">
+
+
+                    <div class="card-title">Chocolate chip cookies</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $3.50
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(3.5)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Bakery" data-name="freshly baked blueberry muffins">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/blueberry-muffins.png" alt="Freshly baked blueberry muffins">
+
+
+                    <div class="card-title">Freshly baked blueberry muffins</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $3.00
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(3.0)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Frozen" data-name="frozen green peas 500 g">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/green-peas.png" alt="Frozen green peas 500 g">
+
+
+                    <div class="card-title">Frozen green peas 500 g</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $2.50
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(2.5)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Fruits" data-name="sweet corn 1 unit">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/corn.jpg" alt="Sweet corn 1 unit">
+
+
+                    <div class="card-title">Sweet corn 1 unit</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $5.25
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(5.25)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Snacks" data-name="salted roasted almonds 200 g">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/almonds.png" alt="Salted roasted almonds 200 g">
+
+
+                    <div class="card-title">Salted roasted almonds 200 g</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $5.00
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(5.0)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Dairy" data-name="unsweetened vanilla almond milk 1 l">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/almond-milk.png" alt="Unsweetened vanilla almond milk 1 L">
+
+
+                    <div class="card-title">Unsweetened vanilla almond milk 1 L</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $4.30
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(4.3)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Pasta &amp; Grains" data-name="italian whole wheat spaghetti 500 g">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/pasta.png" alt="Italian whole wheat spaghetti 500 g">
+
+
+                    <div class="card-title">Italian whole wheat spaghetti 500 g</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $3.00
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(3.0)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Snacks" data-name="potato chips 150 g">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/potato-chips.png" alt="Potato chips 150 g">
+
+
+                    <div class="card-title">Potato chips 150 g</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $2.30
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(2.3)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col product-item" data-category="Vegetables" data-name="organic baby spinach leaves">
+            <div class="card hp_card">
+                <div class="card-body">
+                    <img class="card-img-top" src="/images/products/spinach.png" alt="Organic baby spinach leaves">
+
+
+                    <div class="card-title">Organic baby spinach leaves</div>
+
+                    <div class="row card-buttons">
+                        <div class="col card-price">
+                            $3.50
+                        </div>
+                        <div class="col text-end">
+                            <a href="#"
+                                class='btn btn-sm card-button disabled'
+                                onclick='return addItem(3.5)'><i class="bi bi-cart-plus"></i> Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+
+<div class="modal" tabindex="-1" id="thanksModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="bi bi-megaphone"></i> Checkout completed</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Thank you for your order! Your purchase is complete. <b>Thanks for choosing us!</b></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" id="stepUpModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="bi bi-shield-check"></i> Additional step is required</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Your shopping cart currently contains items that require you to sign-in with a strong factor
+                    authentication (MFA).</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a class="btn btn-primary" href="/SignIn?handler=StepUp">Continue</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </main>
+    </div>
+
+    <!-- About this demop -->
+    <button b-0fiwf46bo8 id="offcanvasButton" class="btn btn-success" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onclick="showUseCase(2);"><i b-0fiwf46bo8
+            class="bi bi-arrow-up-circle fs-3"></i>&nbsp;&nbsp; <span b-0fiwf46bo8 class="fs-5">Select a use case</span></button>
+
+    <div b-0fiwf46bo8 class="offcanvas offcanvas-end" data-bs-scroll="false" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div b-0fiwf46bo8 class="offcanvas-header">
+            <img b-0fiwf46bo8 src="/images/logo.png" height="34" alt="Woodgrove logo" />
+            <h3 b-0fiwf46bo8>About the demo</h3>
+            <button b-0fiwf46bo8 type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div b-0fiwf46bo8 class="offcanvas-body">
+            <div b-0fiwf46bo8 id="scroller" style="transform: translate(0px, 0px) translateZ(0px);">
+                    
+<div>
+    <input type="hidden" id="customDomainValue" value="login.woodgrovedemo.com">
+    <script>
+        var authenticated = false;
+    </script>
+
+        <style>
+            .auth,
+            .auth-without-mfa,
+            .auth-with-mfa {
+                display: none;
+            }
+        </style>
+
+
+
+    Select a use-case or a feature, read the instructions and start the demo:
+    <div class="dropdown" style="margin-top: 15px">
+        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+            onclick="clearFilterUseCases()" aria-expanded="false"
+            style="width: 100%; text-align: left; border-color: gray;">
+            Select a use case
+        </a>
+
+        <ul class="dropdown-menu" id="demosDropdown" aria-labelledby="dropdownMenuLink">
+
+        </ul>
+    </div>
+
+    <div id="useCases">
+
+    </div>
+</div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback button --->
+    <div b-0fiwf46bo8 id="feedbackButton">
+        <a b-0fiwf46bo8 class="btn btn-success feedback" data-bs-offset="10,-100" data-toggle="popover" data-bs-placement="top"
+            title="Provide feedback" href="https://github.com/microsoft/woodgrove-groceries/issues/new"><i b-0fiwf46bo8
+                class="bi bi-megaphone"></i>&nbsp; Feedback</a>
+    </div>
+
+    <!--Image fullscreen-->
+    <div b-0fiwf46bo8 class="modal" tabindex="-1" id="imagemodal">
+        <div b-0fiwf46bo8 class="modal-dialog modal-fullscreen">
+            <div b-0fiwf46bo8 class="modal-content" style="background-color: black;">
+                <div b-0fiwf46bo8 class="modal-body" style="text-align: center;">
+                    <a b-0fiwf46bo8 type="button" data-bs-dismiss="modal">
+                        <img b-0fiwf46bo8 src="" class="imagepreview" style="width: 100%;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div b-0fiwf46bo8 style="height: 80px;"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer b-0fiwf46bo8 class="border-top footer text-muted" style="border-top-style: none!important; height: 100px;">
+        <svg b-0fiwf46bo8 viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
+            <path b-0fiwf46bo8 transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700"
+                fill="rgb(50, 111, 2)" />
+            <path b-0fiwf46bo8 d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="rgb(222, 238, 222)" />
+        </svg>
+        <div b-0fiwf46bo8 class="container-fluid footer-text"
+            style="width: 100%; top: -60px; position: relative; background-color: rgb(222, 238, 222);">
+            &copy; 2025 - Woodgrove Groceries &nbsp; - &nbsp;&nbsp;
+            <i b-0fiwf46bo8 class="bi bi-info-circle"></i> <a style="padding-right: 10px;" href="/Help">Help</a>
+            <i b-0fiwf46bo8 class="bi bi-lock"></i> <a style="padding-right: 10px;" href="/Privacy">Privacy</a>
+            <i b-0fiwf46bo8 class="bi bi-file-earmark-text"></i> <a style="padding-right: 10px;" href="/TOS">Terms of
+                service</a>
+            <i b-0fiwf46bo8 class="bi bi-github"></i> <a b-0fiwf46bo8 href="https://github.com/microsoft/woodgrove-groceries"
+                style="padding-right: 10px;">Source code</a>
+            <i b-0fiwf46bo8 class="bi bi-github"></i> <a b-0fiwf46bo8 href="https://github.com/microsoft/woodgrove-auth-api"
+                style="padding-right: 10px;">Authentication API</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
+    <script src="/js/site.js?v=qsrSP0A56qdQ6S7-zp-XBssAZQgP1HedwW8TkhCPVXQ"></script>
+    <script src="/js/demos.js?v=VIiKtlislh8FdHm9rJPzPwW1k0wm0McttrWex8d8Lo0"></script>
+
+    
+    <script src="/js/index.js"></script>
+;
+</body>
+
+</html>
